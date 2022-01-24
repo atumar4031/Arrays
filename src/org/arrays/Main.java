@@ -31,7 +31,7 @@ public class Main {
             String single_row = "[";
             for (int col = 0; col < fruits[row].length ; col++){
                 fruits[row][col] = row + "";
-                single_row += fruits[row][col]+" ";
+                single_row += fruits[row][col]+", ";
             }
             single_row += "] \n";
             output += single_row;
