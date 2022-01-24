@@ -5,12 +5,12 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        String numbers = arrays(5);
+        String numbers = one_d_arrays(5);
         System.out.println(numbers);
 
 
     }
-    public static String arrays(int size){
+    public static String one_d_arrays(int size){
         int[] numbers = new int[size];
         for(int i =0 ; i<numbers.length; i++)
             numbers[i] = i + 1;
