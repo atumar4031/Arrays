@@ -4,7 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        int size = 3;
+
+        String numbers = arrays(5);
+        System.out.println(numbers);
+
+
+    }
+    public static String arrays(int size){
         int[] numbers = new int[size];
         for(int i =0 ; i<numbers.length; i++)
             numbers[i] = i + 1;
@@ -14,7 +20,7 @@ public class Main {
             output += n+", ";
         output = output.substring(0, output.lastIndexOf(','));
         output += "]";
-        System.out.println(output);
 
+        return output;
     }
 }
