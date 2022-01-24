@@ -7,7 +7,8 @@ public class Main {
 
 //        String numbers = one_d_arrays(5);
 //        System.out.println(numbers);
-        two_d_arrays();
+        String out = two_d_arrays();
+        System.out.println(out);
 
     }
     public static String one_d_arrays(int size){
@@ -23,17 +24,19 @@ public class Main {
 
         return output;
     }
-    public static void two_d_arrays(){
+    public static String two_d_arrays(){
         String[][] fruits = new String[3][3];
-
+        String output = "";
         for (int row = 0; row < fruits.length; row++){
-            System.out.print("[");
+            String single_row = "[";
             for (int col = 0; col < fruits[row].length ; col++){
                 fruits[row][col] = row + "";
-                System.out.print(fruits[row][col]+" ");
+                single_row += fruits[row][col]+" ";
             }
-        System.out.print("]");
-        System.out.println();
+            single_row += "] \n";
+            output += single_row;
         }
+
+        return output;
     }
 }
